@@ -1,2 +1,2 @@
-web: gunicorn mango.wsgi
+web: gunicorn mango.wsgi --log-file -
 
