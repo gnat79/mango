@@ -1,5 +1,7 @@
 from django.http import HttpResponse
+from django.template import loader
 
 
 def index(request):
-    return HttpResponse("Play the 2048 game.")
+    template = loader.get_template('play/index.html')
+    return HttpResponse(template.render(request))
