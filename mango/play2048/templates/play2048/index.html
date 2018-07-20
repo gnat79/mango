@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>2048 Game by gnat79</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/js.cookie.js"></script>
-    <script src="js/play.js" defer></script>
+    {% load static %}
+    <script src="{% static 'play2048/static/js/jquery-3.3.1.js' %}"></script>
+    <script src="{% static 'play2048/static/js/js.cookie.js' %}"></script>
+    <script src="{% static 'play2048/static/js/play.js' %}" defer ></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'play2048/static/style.css' %}"/>
 </head>
 <body>
 <div id="wrapper">
@@ -37,5 +38,6 @@
         <div id="restart" class="blurb">Restart Game</div>
     </div>
 </div>
+
 </body>
 </html>
