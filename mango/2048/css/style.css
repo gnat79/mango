@@ -39,11 +39,11 @@ body {
 }
 
 .blurb {
-    width: 228px;
+    width: 198px;
     border: 1px solid darkslategrey;
     background-color: #639187;
     color: #E5E1D3;
-    padding: 5px;
+    padding: 10px 20px 10px 20px;
     border-radius: 5px;
     margin: 5px;
 }
